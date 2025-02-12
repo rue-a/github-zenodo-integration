@@ -1,0 +1,36 @@
+{    
+    "title": "Zenodo-GitHub-Integration Showcase",
+    "upload_type": "publication-technicalnote",
+    "creators": [
+        {
+            "affiliation": "SLUB Dresden",
+            "name": "Rümmler, Arne",
+            "orcid": "0000-0001-8637-9071"
+        }
+    ],
+    "related_identifiers": [
+        {
+            "scheme": "url",
+            "identifier": "https://docs.google.com/presentation/d/107sWUOuTP_UIZXYF3QcefZrjXndOT11h9WE4Vxdf33c/edit?usp=sharing",
+            "relation": "isreferencedby",
+            "resource_type": "publication-technicalnote"
+        },
+        {
+            "scheme": "url",
+            "identifier": "https://docs.google.com/spreadsheets/d/14XAITKJBJQ8JJBGAX_rkhZtm3W_4EjkQBwkY5Up6xEk/edit?usp=sharing",
+            "relation": "issupplementedby",
+            "resource_type": "publication-technicalnote"
+        },
+         {
+            "scheme": "url",
+            "identifier": "https://tex.zih.tu-dresden.de/read/dcrjcwyfgsvh#453979",
+            "relation": "issupplementedby",
+            "resource_type": "publication-technicalnote"
+        }
+    ],
+    "keywords": [
+        "RDM",
+        "GitHub",
+        "Zenodo"
+    ]
+}
