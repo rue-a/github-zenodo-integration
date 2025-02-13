@@ -17,7 +17,7 @@ Zenodo agent interpret the `LICENSE` file itself.
 information that is consistent over multiple releases.
 
 > [!TIP]
-> I think the easiest way to find a specific field name/identifier for the `.zenodo.json` metadata file is to create a Zenodo record with the search-for metadata field in the sandbox environment and then download the metadata in `json` format.
+> I think the easiest way to find a specific field name/identifier for the `.zenodo.json` metadata file is to create a Zenodo record with the searched-for metadata field in the Zenodo sandbox environment and then download the metadata in `json` format.
 
 ## Links
 
