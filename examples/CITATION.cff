@@ -1,0 +1,42 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: title in cff file
+message: cff file message
+type: dataset
+authors:
+  - given-names: Arne cff
+    family-names: Rümmler cff
+    email: arne.ruemmler.cff@slub-dresden.de
+    affiliation: SLUB Dresden cff
+    orcid: 0000-0001-8637-9071
+  - given-names: Arne2 cff
+    family-names: Rümmler2 cff
+    email: arne.ruemmler2.cff@slub-dresden.de
+    affiliation: SLUB Dresden 2 cff
+identifiers:
+  - type: doi
+    value: 10.5072/zenodo.138646
+    description: Zenodo record cff
+  - type: url
+    value: 'https://arxiv.org/abs/2412.02772'
+    description: example arxiv url cff
+  - type: swh
+    value: 'swh:1:dir:23b21dea9549d449e72e6864722840ef9da7a1bc'
+    description: example Software Heritage id cff
+  - type: other
+    value: 'https://citation-file-format.github.io/'
+    description: example other identifier cff
+repository-code: 'http://www.test-repo-url-in-cff.org'
+url: 'http://www.test-website-url-in-cff.org'
+repository: 'http://www.test-other-repo-url-in-cff.org'
+repository-artifact: 'http://www.test-artifact-in-cff.org'
+abstract: description in cff file
+keywords:
+  - test-cff
+  - zenodo-cff
+  - github-cff
+commit: cff test commit_id
+version: 1.2.3-cff
+date-released: '2024-11-04'
