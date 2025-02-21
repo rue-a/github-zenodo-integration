@@ -10,7 +10,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 > [!WARNING]
 > It is strongly advised to **test the integration on the [Zenodo Sandbox](https://sandbox.zenodo.org/)** before deploying it in a production environment; once a record is published on Zenodo, it cannot be deleted.
 
-<p align="center" width="100%">
+<p align="right" width="100%">
     <img width="70%" src="images/integration_enabling.png">
 </p>
 
@@ -18,7 +18,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 
 As soon as a connection between a GitHub repository and Zenodo is established, each new release on GitHub causes the Zenodo integration software (Zenodo agent) to pull the repository as a compressed ZIP archive and to publish it on Zenodo as a new record or, if a record was already created by a previous release, a new version. The Zenodo agent also extracts metadata from the GitHub repository and uses it to populate the Zenodo record.
 
-<p align="center" width="100%">
+<p align="right" width="100%">
     <img width="70%" src="images/default_metadata.png">
 </p>
 
@@ -31,7 +31,7 @@ Besides metadata that is extracted directly from the repository, the Zenodo agen
 > [!WARNING]
 > If both a Zenodo metadata file and a citation metadata file are present in the GitHub repository, [the citation metadata file is completely ignored by the Zenodo agent](https://support.zenodo.org/help/en-gb/24-github-integration/96-how-does-a-citation-cff-file-affect-metadata-of-my-github-release).
 
-<p align="center" width="100%">
+<p align="right" width="100%">
     <img width="70%" src="images/metadata_sources.png">
 </p>
 
