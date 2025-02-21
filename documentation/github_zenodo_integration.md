@@ -63,8 +63,6 @@ License information in the `CITATION.cff` fiel or `.zenodo.json` file cause the 
 
 “`CITATION.cff` files are plain text files with human- and machine-readable citation information for software (and datasets). Code developers can include them in their repositories to let others know how to correctly cite their software” ([Citation File Format](https://citation-file-format.github.io/)).
 
-As it is considered good scientific practice to include such a citation metadata file in Git repositories, Zenodo started supporting it in 2023.
-
 If a citation metadata file is found in the root directory of the GitHub repository, the Zenodo agent fetches its contents and fills the metadata fields of the Zenodo record accordingly, thereby overwriting the [fetched metadata](#subsec:fetched_metadata). Only a subset of the citation metadata is mapped to Zenodo metadata, e.g., the version or the release date are ignored.
 
 > [!NOTE]
