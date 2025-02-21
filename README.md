@@ -3,10 +3,13 @@
 The documents in this repository and the links below are resources that describe the intricacies of the [GitHub-Zenodo-Integration feature](https://help.zenodo.org/docs/profile/linking-accounts/).
 
 
- \>>> **[Detailed documentation](documentation/github_zenodo_integration.md)** <<<
+> [!IMPORTANT]
+>  **[Detailed documentation](documentation/github_zenodo_integration.md)** 
 
 ## [TL;DR](https://en.wikipedia.org/wiki/TL;DR)
 
+> [!WARNING]
+> Zenodo records can not be deleted! Get used to the GitHub-Zenodo-Integration feature in the [Zenodo sandbox environment](https://sandbox.zenodo.org/login/). 
 
  - **Use a metadata file (`CITATION.cff` or `.zenodo.json`).**
   
@@ -18,8 +21,7 @@ Zenodo agent interpret the `LICENSE` file itself.**
  - **When using the Zenodo metadata file, only enter
 information that is consistent over multiple releases.**
 
-> [!WARNING]
-> Get used to the GitHub-Zenodo-Integration feature in the [Zenodo sandbox environment](https://sandbox.zenodo.org/login/). Zenodo records can not be deleted!
+
 
 
 
