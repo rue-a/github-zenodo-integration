@@ -1,4 +1,4 @@
-{    
+{
     "title": "Zenodo-GitHub-Integration Showcase",
     "upload_type": "publication-technicalnote",
     "creators": [
@@ -21,11 +21,17 @@
             "relation": "issupplementedby",
             "resource_type": "publication-technicalnote"
         },
-         {
+        {
             "scheme": "url",
-            "identifier": "https://tex.zih.tu-dresden.de/read/dcrjcwyfgsvh#453979",
+            "identifier": "https://github.com/rue-a/github-zenodo-integration/tree/master/documentation/github_zenodo_integration.md",
             "relation": "issupplementedby",
             "resource_type": "publication-technicalnote"
+        },
+        {
+            "scheme": "doi",
+            "identifier": "10.58079/13cmg",
+            "relation": "isreferencedby",
+            "resource_type": "publication-other"
         }
     ],
     "keywords": [
