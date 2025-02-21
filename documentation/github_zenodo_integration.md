@@ -1,7 +1,7 @@
 # Zenodo-GitHub -Integration
 
 
-*When the Zenodo-GitHub-Integration is enabled, each new repository release triggers Zenodo to archive it and assign a DOI, thus ensuring proper citation and long-term accessibility. This document details which metadata is extracted from the GitHub repository and transferred to Zenodo.*
+*When the Zenodo-GitHub-Integration is enabled, each new release of a GitHub repository triggers Zenodo to archive the repository in its current state in Zenodo with a DOI assigned, thus fostering proper citation and long-term accessibility. This document describes this functionality and details what metadata is extracted from the GitHub repository and transferred to Zenodo.*
 
 ## Configuring the Zenodo-GitHub-Integration
 
@@ -10,13 +10,18 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 > [!WARNING]
 > It is strongly advised to **test the integration on the [Zenodo Sandbox](https://sandbox.zenodo.org/)** before deploying it in a production environment; once a record is published on Zenodo, it cannot be deleted.
 
-<img  style="display:block;float:none;margin-left:auto;margin-right:auto;border: 2px solid #888;width:90%" src="images/integration_enabling.png">
-
-
+<p align="center" width="100%">
+    <img width="90%" src="images/integration_enabling.png">
+</p>
 
 ## Effects of the Integration 
 
 As soon as a connection between a GitHub repository and Zenodo is established, each new release on GitHub causes the Zenodo integration software (Zenodo agent) to pull the repository as a compressed ZIP archive and to publish it on Zenodo as a new record or, if a record was already created by a previous release, a new version. The Zenodo agent also extracts metadata from the GitHub repository and uses it to populate the Zenodo record.
+
+<p align="center" width="100%">
+    <img width="90%" src="images/default_metadata.png">
+</p>
+
 
 Besides metadata that is extracted directly from the repository, the Zenodo agent also searches the root directory of the GitHub repository for certain files from which it can extract metadata for the Zenodo record. Namely, these files are `LICENSE`, `CITATION.cff`, and `.zenodo.json`. Refer to the [ metadata mapping table](https://docs.google.com/spreadsheets/d/14XAITKJBJQ8JJBGAX_rkhZtm3W_4EjkQBwkY5Up6xEk/edit?usp=sharing) for details.
 
@@ -25,6 +30,11 @@ Besides metadata that is extracted directly from the repository, the Zenodo agen
 
 > [!WARNING]
 > If both a Zenodo metadata file and a citation metadata file are present in the GitHub repository, [the citation metadata file is completely ignored by the Zenodo agent](https://support.zenodo.org/help/en-gb/24-github-integration/96-how-does-a-citation-cff-file-affect-metadata-of-my-github-release).
+
+<p align="center" width="100%">
+    <img width="90%" src="images/metadata_sources.png">
+</p>
+
 
 ### Recommendations
 
@@ -69,8 +79,12 @@ The Zenodo metadata file is similar to the citation metadata file, but with the 
 
 
 > [!NOTE]
-> Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label.
-> ![Zenodo record versions with the same version label](graphics/same_versions.png)
+> Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. 
+
+<p align="right" width="100%">
+    <img width="40%" src="images/same_versions.png">
+</p>
+
 
 > [!NOTE]
 > If the Zenodo metadata file is structurally invalid or contains invalid values, the process fails and nothing is published on Zenodo. Ideally, validate your Zenodo metadata file against the [Zenodo record legacy schema](https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json). To do this, e.g., go to [JSON Schema Validator](https://www.jsonschemavalidator.net/), paste the schema in the left box, and your Zenodo metadata file in the right box.
