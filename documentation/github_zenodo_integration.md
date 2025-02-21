@@ -11,7 +11,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 > It is strongly advised to **test the integration on the [Zenodo Sandbox](https://sandbox.zenodo.org/)** before deploying it in a production environment; once a record is published on Zenodo, it cannot be deleted.
 
 <p align="center" width="100%">
-    <img width="90%" src="images/integration_enabling.png">
+    <img width="70%" src="images/integration_enabling.png">
 </p>
 
 ## Effects of the Integration 
@@ -19,7 +19,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 As soon as a connection between a GitHub repository and Zenodo is established, each new release on GitHub causes the Zenodo integration software (Zenodo agent) to pull the repository as a compressed ZIP archive and to publish it on Zenodo as a new record or, if a record was already created by a previous release, a new version. The Zenodo agent also extracts metadata from the GitHub repository and uses it to populate the Zenodo record.
 
 <p align="center" width="100%">
-    <img width="90%" src="images/default_metadata.png">
+    <img width="70%" src="images/default_metadata.png">
 </p>
 
 
@@ -32,7 +32,7 @@ Besides metadata that is extracted directly from the repository, the Zenodo agen
 > If both a Zenodo metadata file and a citation metadata file are present in the GitHub repository, [the citation metadata file is completely ignored by the Zenodo agent](https://support.zenodo.org/help/en-gb/24-github-integration/96-how-does-a-citation-cff-file-affect-metadata-of-my-github-release).
 
 <p align="center" width="100%">
-    <img width="90%" src="images/metadata_sources.png">
+    <img width="70%" src="images/metadata_sources.png">
 </p>
 
 
@@ -82,7 +82,7 @@ The Zenodo metadata file is similar to the citation metadata file, but with the 
 > Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. 
 
 <p align="right" width="100%">
-    <img width="40%" src="images/same_versions.png">
+    <img width="30%" src="images/same_versions.png">
 </p>
 
 
