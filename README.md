@@ -7,7 +7,7 @@ The documents in this repository and the links below are resources that describe
 
 ## [TL;DR](https://en.wikipedia.org/wiki/TL;DR)
 
-> [!IMPORTANT]
+
 > - Use a metadata file (`CITATION.cff` or `.zenodo.json`).
 >  
 > - Do not include license information in the metadata file, but let the
