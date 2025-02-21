@@ -28,4 +28,4 @@ information that is consistent over multiple releases.**
 >  If both a `CITATION.cff` file and a `.zenodo.json` file exist, the `CITATION.cff` file will be ignored, regardless of the contents of the `.zenodo.json` file.
 
 > [!TIP]
-> I think the easiest way to find a specific field name/identifier for the `.zenodo.json` metadata file is to create a Zenodo record with the searched-for metadata field in the Zenodo sandbox environment and then download the metadata in `json` format.
+> I think the easiest way to find a specific field name/identifier for the `.zenodo.json` metadata file is to create a Zenodo record with the metadata field you are looking for in the Zenodo sandbox environment and then download the metadata in `JSON` format.
