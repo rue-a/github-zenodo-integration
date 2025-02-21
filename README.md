@@ -8,14 +8,14 @@ The documents in this repository and the links below are resources that describe
 ## [TL;DR](https://en.wikipedia.org/wiki/TL;DR)
 
 > [!IMPORTANT]
-> Use a metadata file (`CITATION.cff` or `.zenodo.json`).
+> - Use a metadata file (`CITATION.cff` or `.zenodo.json`).
 >  
-> Do not include license information in the metadata file, but let the
+> - Do not include license information in the metadata file, but let the
 Zenodo agent interpret the `LICENSE` file itself.
 >
-> Handle the version management via the GitHub release tags.
+> - Handle the version management via the GitHub release tags.
 > 
-> When using the Zenodo metadata file, only enter
+> - When using the Zenodo metadata file, only enter
 information that is consistent over multiple releases.
 
 > [!WARNING]
