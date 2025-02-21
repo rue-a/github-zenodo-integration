@@ -79,9 +79,7 @@ The Zenodo metadata file is similar to the citation metadata file, but with the 
 
 
 > [!NOTE]
-> Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. 
-
-<p align="right" width="100%">
+> Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. <p align="right" width="100%">
     <img width="30%" src="images/same_versions.png">
 </p>
 
