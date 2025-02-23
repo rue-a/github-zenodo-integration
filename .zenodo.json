@@ -18,7 +18,7 @@
         },
         {
             "scheme": "url",
-            "identifier": "https://github.com/rue-a/github-zenodo-integration/tree/master/documentation/metadata_mapping_table.html",
+            "identifier": "https://docs.google.com/spreadsheets/d/14XAITKJBJQ8JJBGAX_rkhZtm3W_4EjkQBwkY5Up6xEk/edit?usp=sharing",
             "relation": "issupplementedby",
             "resource_type": "publication-technicalnote"
         },
