@@ -1,0 +1,9 @@
+remote_theme: pages-themes/minimal
+plugins:
+- jekyll-remote-theme
+- jemoji
+title: Zenodo-GitHub-Integration
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false

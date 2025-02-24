@@ -1,4 +1,8 @@
-# Metadata Mapping Table
+---
+layout: default
+title: "Metadata Mapping Table"
+permalink: /mapping/
+---
 
 <style type="text/css">
     .ritz .waffle a {

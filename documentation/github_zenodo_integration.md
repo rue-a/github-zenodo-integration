@@ -1,9 +1,12 @@
-# Zenodo-GitHub-Integration
-
+---
+layout: default
+title: "Zenodo-GitHub-Integration Documentation"
+permalink: /documentation/
+---
 
 *When the Zenodo-GitHub-Integration is enabled, each new release of a GitHub repository triggers Zenodo to archive the repository in its current state in Zenodo with a DOI assigned, thus fostering proper citation and long-term accessibility. This document describes this functionality and details what metadata is extracted from the GitHub repository and transferred to Zenodo.*
 
-## Configuring the Zenodo-GitHub-Integration
+## Configuring the Integration
 
 Configuring the Zenodo-GitHub-Integration is a straightforward process. To enable it, navigate to the Zenodo settings page and link your GitHub account to your Zenodo account. Then, locate the repository of interest and activate the integration by toggling the corresponding switch. Once enabled, the next release of the repository will automatically generate a Zenodo record.
 
@@ -11,7 +14,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 > It is strongly advised to **test the integration on the [Zenodo Sandbox](https://sandbox.zenodo.org/)** before deploying it in a production environment. Once a record is published on Zenodo, it cannot be deleted.
 
 <p align="right" width="100%">
-    <img width="70%" src="images/integration_enabling.png">
+    <img width="90%" src="images/integration_enabling.png">
     <br>
     <i>Enabling the GitHub-Zenodo-Integration.</i>
 </p>
@@ -22,7 +25,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 As soon as a connection between a GitHub repository and Zenodo is established, each new release of the GitHub repository causes the Zenodo integration software (Zenodo agent) to download the repository as a compressed ZIP archive and to publish it subsequently on Zenodo as a new record (or a new version if a record was already created by a previous release). The Zenodo agent also extracts metadata from the GitHub repository and from its release, and uses it to populate the Zenodo record.
 
 <p align="right" width="100%">
-    <img width="70%" src="images/default_metadata.png">
+    <img width="90%" src="images/default_metadata.png">
     <br>
     <i>Default metadata extracted from the GitHub repository.</i>
 </p>
@@ -36,7 +39,7 @@ Besides metadata that is extracted directly from the repository, the Zenodo agen
 > If both a Zenodo metadata file and a citation metadata file are present in the GitHub repository, the Zenodo agent will completely ignore the citation metadata file.
 
 <p align="right" width="100%">
-    <img width="70%" src="images/metadata_sources.png">
+    <img width="90%" src="images/metadata_sources.png">
     <br>
     <i>Different sources from which the Zenodo agent extracts metadata (non-comprehensive).</i>
 </p>
@@ -90,7 +93,7 @@ The Zenodo metadata file is similar to the citation metadata file, but with the 
 > [!NOTE]
 > Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. 
 <p align="right" width="100%">
-    <img width="30%" src="images/same_versions.png"><br>
+    <img width="50%" src="images/same_versions.png"><br>
     <i>Different versions, same version labels.</i>
 </p>
 
