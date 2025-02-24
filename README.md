@@ -1,1 +1,1 @@
-This repository contains the source files for the [Zenodo-GitHub-Integration Documentation](https://rue-a.github.io/zenodo_github-integration/).
+This repository contains the source files for the [Zenodo-GitHub-Integration Documentation](https://rue-a.github.io/github-zenodo-integration/).
