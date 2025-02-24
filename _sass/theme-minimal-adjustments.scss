@@ -1,0 +1,173 @@
+// Global settings for the body and typography
+body {
+    background-color: #fff;
+    padding: 50px;
+    font: 12pt/1.5 Work-Sans, Arial, sans-serif;
+    color: #727272;
+    font-weight: 400;
+
+    a {
+        color: hsl(220, 60%, 60%);
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            color: hsl(220, 50%, 50%);
+            text-decoration: underline;
+        }
+
+        small {
+            font-size: 11px;
+            color: #777;
+            margin-top: -0.3em;
+            display: block;
+        }
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        color: #222;
+        margin-bottom: 20px;
+        margin-top: 80px;
+        line-height: 1.1;
+    }
+
+    p,
+    ul,
+    ol,
+    table,
+    pre,
+    dl {
+        margin-bottom: 20px;
+    }
+
+    blockquote {
+        margin: 0 0; // Centers the blockquote (if width is constrained by its container)
+        padding: 0 50px; // 50px padding on left and right
+        font-style: italic;
+    }
+
+    code,
+    pre {
+        font-family: "Fira Mono", 'Courier New', Courier, monospace;
+        color: #333;
+        background: #EFF1F3;
+    }
+
+    pre {
+        padding: 8px 15px;
+        border: 1px solid #e5e5e5;
+        border-radius: 5px;
+        overflow-x: auto;
+    }
+
+    table {
+        width: 100%;
+        border-collapse: collapse;
+
+        th,
+        td {
+            text-align: left;
+            padding: 5px 10px;
+            border-bottom: 1px solid #e5e5e5;
+        }
+    }
+
+    dt {
+        color: #444;
+        font-weight: 700;
+    }
+
+    th {
+        color: #444;
+    }
+
+    img {
+        max-width: 100%;
+    }
+
+    kbd {
+        background-color: #fafbfc;
+        border: 1px solid #c6cbd1;
+        border-bottom-color: #959da5;
+        border-radius: 3px;
+        box-shadow: inset 0 -1px 0 #959da5;
+        color: #444d56;
+        display: inline-block;
+        font-size: 11px;
+        line-height: 10px;
+        padding: 3px 5px;
+        vertical-align: middle;
+    }
+
+    small {
+        font-size: 11px;
+    }
+
+    hr {
+        border: 0;
+        background: #e5e5e5;
+        height: 1px;
+        margin-bottom: 20px;
+    }
+}
+
+// Wrapper for fixed-width layout
+.wrapper {
+    width: 1060px;
+    margin: 0 auto;
+}
+
+// Header and footer styling
+header,
+footer {
+    width: 270px;
+    float: left;
+    position: fixed;
+    text-align: right;
+    -webkit-font-smoothing: subpixel-antialiased;
+}
+
+footer {
+    bottom: 50px;
+}
+
+// Sidebar navigation
+.sidebar-nav {
+    ul {
+        list-style: none;
+        font-size: 14pt;
+    }
+}
+
+// Main section styling
+section {
+    padding-top: 10vh;
+    width: 700px;
+    float: right;
+    padding-bottom: 50px;
+    text-align: justify;
+}
+
+// Canvas container hover state
+#canvas-container:hover {
+    cursor: pointer;
+}
+
+
+// Optional: Adjust headings sizes individually if needed
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 28px;
+}
+
+h3 {
+    font-size: 20px;
+}

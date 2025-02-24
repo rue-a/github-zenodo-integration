@@ -4,7 +4,8 @@ title: "Zenodo-GitHub-Integration Documentation"
 permalink: /documentation/
 ---
 
-*When the Zenodo-GitHub-Integration is enabled, each new release of a GitHub repository triggers Zenodo to archive the repository in its current state in Zenodo with a DOI assigned, thus fostering proper citation and long-term accessibility. This document describes this functionality and details what metadata is extracted from the GitHub repository and transferred to Zenodo.*
+> [!ABSTRACT]
+> When the Zenodo-GitHub-Integration is enabled, each new release of a GitHub repository triggers Zenodo to archive the repository in its current state in Zenodo with a DOI assigned, thus fostering proper citation and long-term accessibility. This document describes this functionality and details what metadata is extracted from the GitHub repository and transferred to Zenodo.
 
 ## Configuring the Integration
 

@@ -3,8 +3,8 @@ layout: default
 title: "tldr"
 permalink: /
 ---
-
-*These pages describe the intricacies of the [GitHub-Zenodo-Integration feature](https://help.zenodo.org/docs/profile/linking-accounts/).*
+> [!ABSTRACT] 
+> These pages describe the intricacies of the [GitHub-Zenodo-Integration feature](https://help.zenodo.org/docs/profile/linking-accounts/).
 
 ## In a Nutshell
 
