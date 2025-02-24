@@ -12,20 +12,8 @@
     "related_identifiers": [
         {
             "scheme": "url",
-            "identifier": "https://github.com/rue-a/github-zenodo-integration/tree/master/misc/slides.pptx",
-            "relation": "isreferencedby",
-            "resource_type": "publication-technicalnote"
-        },
-        {
-            "scheme": "url",
-            "identifier": "https://docs.google.com/spreadsheets/d/14XAITKJBJQ8JJBGAX_rkhZtm3W_4EjkQBwkY5Up6xEk/edit?usp=sharing",
-            "relation": "issupplementedby",
-            "resource_type": "publication-technicalnote"
-        },
-        {
-            "scheme": "url",
-            "identifier": "https://github.com/rue-a/github-zenodo-integration/tree/master/documentation/github_zenodo_integration.md",
-            "relation": "issupplementedby",
+            "identifier": "https://rue-a.github.io/github-zenodo-integration/",
+            "relation": "compiles",
             "resource_type": "publication-technicalnote"
         },
         {
