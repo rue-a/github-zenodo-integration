@@ -11,10 +11,9 @@ permalink: /examples/
 
 Both example files are valid and can be used a templates. When a release is of a GitHub repository is published, the Zenodo agent fetches metadata-information from the marked lines only.
 
-> [!WARNING]
-> If a GitHub repository has both a Zenodo metadata file and a citation metadata file, the Zenodo agent will ignore the citation metadata file completely.
 
-**Citation metadata file**
+## Citation metadata file
+
 ```custom
 # This CITATION.cff file was generated with cffinit.
 # Visit https://bit.ly/cffinit to generate yours today!
@@ -37,7 +36,8 @@ doi: "10.5281/zenodo.14859938"
 date-released: "2025-02-21"
 ```
 
-**Zenodo metadata file**
+## Zenodo metadata file
+
 ```custom
 {
 !    "title": "Zenodo-GitHub-Integration Documentation",
@@ -81,3 +81,14 @@ date-released: "2025-02-21"
     ]
 }
 ```
+
+> [!NOTE]
+> While often necessary, using the `related_identifiers` key unfortunately overwrites the default, i.e. the automatic creation of a link to the very publication that created the Zenodo record in the first place. You can add this relation manually with:
+>
+> ```
+>  "scheme": "url",
+>  "identifier": "https://github.com/<github-account-name>/<repository-name>/tree/<release-tag>",
+>  "relation": "issupplementto",
+>  "resource_type": "software"
+> ```
+

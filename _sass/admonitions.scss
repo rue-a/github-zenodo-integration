@@ -1,3 +1,35 @@
+.admonition-heading {
+
+    &-note,
+    &-tip,
+    &-important,
+    &-warning,
+    &-caution {
+        font-weight: bold;
+        font-style: normal;
+    }
+
+    &-note {
+        color: #1e90ff;
+    }
+
+    &-tip {
+        color: #2ecc71;
+    }
+
+    &-important {
+        color: #9900ff;
+    }
+
+    &-warning {
+        color: #ffa500;
+    }
+
+    &-caution {
+        color: #ff4500;
+    }
+}
+
 .admonition {
 
     &-note,
@@ -18,20 +50,18 @@
     }
 
     &-important {
-        background-color: #ffe5e0;
+        background-color: #f1e0ff;
     }
 
     &-warning {
-        background-color: #ffe6e6;
-    }
-
-    &-caution {
         background-color: #fff5e6;
     }
 
-    strong {
-        font-style: normal;
+    &-caution {
+        background-color: #ffe6e6;
     }
+
+
 }
 
 p.abstract {

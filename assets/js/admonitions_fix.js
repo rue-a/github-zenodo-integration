@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Format the type for display (capitalize first letter).
             var formattedType = type.charAt(0).toUpperCase() + type.slice(1);
-            var prefix = '<strong>' + formattedType + '</strong><br><br>';
+            var prefix = `<span class=admonition-heading-${type}>${formattedType}</span><br><br>`;
 
             // Prepend the formatted type to the remaining content.
             firstParagraph.innerHTML = prefix + remainingContent;

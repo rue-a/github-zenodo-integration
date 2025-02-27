@@ -11,7 +11,7 @@ permalink: /
 
 Configuring the Zenodo-GitHub-Integration is a straightforward process. To enable it, navigate to the Zenodo settings page and link your GitHub account to your Zenodo account. Then, locate the repository of interest and activate the integration by toggling the corresponding switch. Once enabled, the next release of the repository will automatically generate a Zenodo record.
 
-> [!WARNING]
+> [!IMPORTANT]
 > It is strongly advised to **test the integration on the [Zenodo Sandbox](https://sandbox.zenodo.org/)** before deploying it in a production environment. Once a record is published on Zenodo, it cannot be deleted.
 
 <p align="right" width="100%">
@@ -108,5 +108,5 @@ The Zenodo metadata file is similar to the citation metadata file, but with the 
 
 ## Limitations
 
-It is not possible to link a GitHub repository with an existing Zenodo record. Populating the `doi` field in the [Zenodo Metadata File](#subsec:zenodo-json) has no effect. It is [impossible to reserve a DOI for a GitHub release](https://support.zenodo.org/help/en-gb/24-github-integration/73-can-i-pre-reserved-a-doi-before-a-github-release) or to get informed about the DOI before it is being minted upon the GitHub release.
+It is not possible to link a GitHub repository with an existing Zenodo record. Populating the `doi` field in the [Zenodo Metadata File](#subsec:zenodo-json) has no effect. It is [impossible to reserve a DOI for a GitHub release](https://support.zenodo.org/help/en-gb/24-github-integration/73-can-i-pre-reserved-a-doi-before-a-github-release) or to get informed about the DOI before it is being minted upon the GitHub release. As a result, it is also impossible to connect a GitHub repository to an already existing Zenodo [Concept DOI](https://zenodo.org/help/versioning). 
 
