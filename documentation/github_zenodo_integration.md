@@ -88,15 +88,15 @@ If a citation metadata file is found in the root directory of the GitHub reposit
 
 ### `.zenodo.json`
 
-The Zenodo metadata file is similar to the citation metadata file, but with the explicit and sole function of providing predefined metadata for the Zenodo record to the Zenodo agent. As such, it allows defining nearly each metadata field of the resulting Zenodo record. Details can be found on the [Zenodo developers page](https://developers.zenodo.org/#add-metadata-to-your-github-repository-release).
+The Zenodo metadata file is similar to the citation metadata file, but with the explicit and sole function of providing predefined metadata for the Zenodo record to the Zenodo agent. As such, it allows defining the most fields of the resulting Zenodo record. Details can be found on the [Zenodo developers page](https://developers.zenodo.org/#add-metadata-to-your-github-repository-release) and in the [metadata mapping table]({{ '/table/' | relative_url }}).
 
 
 > [!NOTE]
 > Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. 
-<p align="right" width="100%">
-    <img width="50%" src="../documentation/images/same_versions.png"><br>
-    <i>Different versions, same version labels.</i>
-</p>
+><p align="right" width="100%">
+>    <img width="50%" src="../documentation/images/same_versions.png"><br>
+>    <i>Different versions, same version labels.</i>
+></p>
 
 > [!NOTE]
 > If the Zenodo metadata file is structurally invalid or contains invalid values, the process fails and nothing is published on Zenodo. Ideally, validate your Zenodo metadata file against the [Zenodo record legacy schema](https://github.com/zenodo/zenodo/blob/master/zenodo/modules/deposit/jsonschemas/deposits/records/legacyrecord.json). To do this, e.g., go to [JSON Schema Validator](https://www.jsonschemavalidator.net/), paste the schema in the left box, and your Zenodo metadata file in the right box.
