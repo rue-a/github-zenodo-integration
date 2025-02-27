@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "tldr"
-permalink: /
+permalink: /short
 ---
 > [!ABSTRACT] 
 > These pages describe the intricacies of the [GitHub-Zenodo-Integration feature](https://help.zenodo.org/docs/profile/linking-accounts/).

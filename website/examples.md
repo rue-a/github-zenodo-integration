@@ -7,6 +7,13 @@ permalink: /examples/
 > [!ABSTRACT]
 > This page shows examples of both a `CITATION.cff` and a `.zenodo.json` file. 
 
+# Examples
+
+Both example files are valid and can be used a templates. When a release is of a GitHub repository is published, the Zenodo agent fetches metadata-information from the marked lines only.
+
+> [!WARNING]
+> If a GitHub repository has both a Zenodo metadata file and a citation metadata file, the Zenodo agent will ignore the citation metadata file completely.
+
 **Citation metadata file**
 ```custom
 # This CITATION.cff file was generated with cffinit.

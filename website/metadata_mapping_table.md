@@ -1,259 +1,198 @@
 ---
 layout: default
 title: "Metadata Mapping Table"
-permalink: /mapping/
+permalink: /table/
 ---
 
-<style type="text/css">
-    .ritz .waffle a {
-        color: inherit;
-    }
+> [!ABSTRACT]
+> This table illustrates the compatibility of Zenodo metadata fields with different resources in a GitHub repository. 
 
-    .ritz .waffle .s3 {
-        background-color: #f4cccc;
-        text-align: left;
-        color: #000000;
-        font-size: 9pt;
-        vertical-align: bottom;
-        white-space: normal;
-        overflow: hidden;
-        word-wrap: break-word;
-        direction: ltr;
-        padding: 2px 3px 2px 3px;
-    }
+# Metadata Mapping Table
 
-    .ritz .waffle .s1 {
-        background-color: #f3f3f3;
-        text-align: left;
-        color: #000000;
-        font-size: 9pt;
-        vertical-align: bottom;
-        white-space: normal;
-        overflow: hidden;
-        word-wrap: break-word;
-        direction: ltr;
-        padding: 2px 3px 2px 3px;
-    }
+The leftmost column in the table lists the Zenodo metadata fields that are supported by the Zendodo-GitHub-Integration. The other columns represent the different resources that are queried by the Zenodo agent, when a release of the repository is published. 
+That means each cell corresponds to the Zenodo metadata field in the leftmost column in its row. The cells are color-coded: blue means the metadata field corresponding to the cell is fully supported by the resource corresponding to the cell, light yellow means its partially supported (mostly due to cardinality), and gray means its not supported. 
 
-    .ritz .waffle .s0 {
-        background-color: #434343;
-        text-align: left;
-        font-weight: bold;
-        color: #f3f3f3;
-        font-size: 9pt;
-        vertical-align: bottom;
-        white-space: normal;
-        overflow: hidden;
-        word-wrap: break-word;
-        direction: ltr;
-        padding: 2px 3px 2px 3px;
-    }
+The resources follow an overwrite hierarchy from right to left, meaning metadata information in resources that belong to columns further right take precedence over those further left.
 
-    .ritz .waffle .s2 {
-        background-color: #d9ead3;
-        text-align: left;
-        color: #000000;
-        font-size: 9pt;
-        vertical-align: bottom;
-        white-space: normal;
-        overflow: hidden;
-        word-wrap: break-word;
-        direction: ltr;
-        padding: 2px 3px 2px 3px;
-    }
-
-    .ritz .waffle .s4 {
-        background-color: #fff2cc;
-        text-align: left;
-        color: #000000;
-        font-size: 9pt;
-        vertical-align: bottom;
-        white-space: normal;
-        overflow: hidden;
-        word-wrap: break-word;
-        direction: ltr;
-        padding: 2px 3px 2px 3px;
-    }
-</style>
-<div class="ritz grid-container" dir="ltr">
-    <table class="waffle" cellspacing="0" cellpadding="0">
+<div>
+    <table>
+        <thead>
+            <tr>
+                <th>Zenodo Metadata Field<br>[Cardinality]</th>
+                <th>GitHub Repository Data</th>
+                <th>GitHub Release Data</th>
+                <th>LICENSE</th>
+                <th>CITATION.cff</th>
+                <th>.zenodo.json</th>
+            </tr>
+        </thead>
         <tbody>
-            <tr style="height: 63px">
-                <td class="s0" dir="ltr">Zenodo Metadata Field<br>[Cardinality]</td>
-                <td class="s0" dir="ltr">GitHub Repository Data</td>
-                <td class="s0" dir="ltr">GitHub Release Data</td>
-                <td class="s0" dir="ltr">LICENSE file</td>
-                <td class="s0" dir="ltr">CITATION.cff file</td>
-                <td class="s0" dir="ltr">.zenodo.json file</td>
+            <tr>
+                <th>Digital Object Identifier [1]</th>
+                <td class="s1" colspan="2">Created automatically</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
             </tr>
             <tr>
-                <td class="freezebar-cell"></td>
-                <td class="freezebar-cell"></td>
-                <td class="freezebar-cell"></td>
-                <td class="freezebar-cell"></td>
-                <td class="freezebar-cell"></td>
-                <td class="freezebar-cell"></td>
+                <th>Resource type [1]</th>
+                <td class="s3" colspan="2">Software</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">upload_type</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Digital Object Identifier [1]</td>
-                <td class="s2" dir="ltr" colspan="2">Created automatically</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-            </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Resource type [1]</td>
-                <td class="s4" dir="ltr" colspan="2">Software</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">upload_type</td>
-            </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Title [1]</td>
-                <td class="s4" dir="ltr" colspan="2">Combination of GitHub user name, repository name and release
+            <tr>
+                <th>Title [1]</th>
+                <td class="s3" colspan="2">Combination of GitHub user name, repository name and release
                     title/tag</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">title</td>
-                <td class="s2" dir="ltr">title</td>
+                <td class="s2">x</td>
+                <td class="s1">title</td>
+                <td class="s1">title</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Publication date [1]</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s4" dir="ltr">Current date</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">publication_date</td>
+            <tr>
+                <th>Publication date [1]</th>
+                <td class="s2">x</td>
+                <td class="s3">Current date</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">publication_date</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Creators (Person) [n]</td>
-                <td class="s4" dir="ltr" colspan="2">[1]</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">authors [n]</td>
-                <td class="s2" dir="ltr">creators [n]</td>
+            <tr>
+                <th>Creators (Person) [n]</th>
+                <td class="s3" colspan="2">[1]</td>
+                <td class="s2">x</td>
+                <td class="s1">authors [n]</td>
+                <td class="s1">creators [n]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">├─ Family name [1]</td>
-                <td class="s2" dir="ltr" colspan="2">Read from GitHub profile (Field: Name) [1]</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">authors:familiy-names [1]</td>
-                <td class="s2" dir="ltr">creators:name [1]</td>
+            <tr>
+                <th>├─ Family name [1]</th>
+                <td class="s1" colspan="2">Read from GitHub profile (Field: Name) [1]</td>
+                <td class="s2">x</td>
+                <td class="s1">authors:familiy-names [1]</td>
+                <td class="s1">creators:name [1]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">├─ Given names [n]</td>
-                <td class="s3" dir="ltr" colspan="2">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">authors:given-names [n]</td>
-                <td class="s2" dir="ltr">creators:name [n]</td>
+            <tr>
+                <th>├─ Given names [n]</th>
+                <td class="s2" colspan="2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">authors:given-names [n]</td>
+                <td class="s1">creators:name [n]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">├─ Identifiers [n]</td>
-                <td class="s3" dir="ltr" colspan="2">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s4" dir="ltr">authors:orcid [1]</td>
-                <td class="s4" dir="ltr">creators:orcid and/or creators:gnd [0..2]</td>
+            <tr>
+                <th>├─ Identifiers [n]</th>
+                <td class="s2" colspan="2">x</td>
+                <td class="s2">x</td>
+                <td class="s3">authors:orcid [1]</td>
+                <td class="s3">creators:orcid/gnd [0..2]</td>
             </tr>
             <tr style="height: 38px">
-                <td class="s1" dir="ltr">├─ Affiliations [n]</td>
-                <td class="s4" dir="ltr" colspan="2">Read from GitHub profile (Field: Organization) [1]</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s4" dir="ltr">authors:affiliation [1]</td>
-                <td class="s2" dir="ltr">creators:affiliation [1] or creators:affiliations [n]</td>
+                <th>├─ Affiliations [n]</th>
+                <td class="s3" colspan="2">Read from GitHub profile (Field: Organization) [1]</td>
+                <td class="s2">x</td>
+                <td class="s3">authors:affiliation [1]</td>
+                <td class="s1">creators:affiliation/affiliations [n]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">└─ Role [n]</td>
-                <td class="s3" dir="ltr" colspan="2">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
+            <tr>
+                <th>└─ Role [n]</th>
+                <td class="s2" colspan="2">x</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Creators (Organization) [n]</td>
-                <td class="s3" dir="ltr" colspan="2">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
+            <tr>
+                <th>Creators (Organization) [n]</th>
+                <td class="s2" colspan="2">x</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Description [1]</td>
-                <td class="s2" dir="ltr">Description from the GitHub About fields</td>
-                <td class="s2" dir="ltr">Release description</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">abstract</td>
-                <td class="s2" dir="ltr">description</td>
+            <tr>
+                <th>Description [1]</th>
+                <td class="s1">Description from the GitHub About fields</td>
+                <td class="s1">Release description</td>
+                <td class="s2">x</td>
+                <td class="s1">abstract</td>
+                <td class="s1">description</td>
             </tr>
             <tr style="height: 39px">
-                <td class="s1" dir="ltr">Additional Description (Notes) [n]</td>
-                <td class="s3" dir="ltr" colspan="2">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s4" dir="ltr">message [1]</td>
-                <td class="s2" dir="ltr">additional_descriptions [n]</td>
+                <th>Additional Description (Notes) [n]</th>
+                <td class="s2" colspan="2">x</td>
+                <td class="s2">x</td>
+                <td class="s3">message [1]</td>
+                <td class="s1">additional_descriptions [n]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Licenses [n]</td>
-                <td class="s4" dir="ltr" colspan="2">CC-BY-4.0</td>
-                <td class="s4" dir="ltr">from file [1]</td>
-                <td class="s4" dir="ltr">license [1]</td>
-                <td class="s4" dir="ltr">license [1]</td>
+            <tr>
+                <th>Licenses [n]</th>
+                <td class="s3" colspan="2">CC-BY-4.0</td>
+                <td class="s3">[1]</td>
+                <td class="s3">license [1]</td>
+                <td class="s3">license [1]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Keywords [n]</td>
-                <td class="s3" dir="ltr" colspan="2">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">keywords [n]</td>
-                <td class="s2" dir="ltr">keywords [n]</td>
+            <tr>
+                <th>Keywords [n]</th>
+                <td class="s2" colspan="2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">keywords [n]</td>
+                <td class="s1">keywords [n]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Version [1]</td>
-                <td class="s2" dir="ltr" colspan="2">Uses the tag of the GitHub release with the string “Version ”
+            <tr>
+                <th>Version [1]</th>
+                <td class="s1" colspan="2">Uses the tag of the release with the string “Version ”
                     prefixed</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">version</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">version</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Related Works [n]</td>
-                <td class="s4" dir="ltr" colspan="2">creates reference to the release [1]</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">related_identifiers [n]</td>
+            <tr>
+                <th>Related Works [n]</th>
+                <td class="s3" colspan="2">creates reference to the release [1]</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">related_identifiers [n]</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">├─ Relation [1]</td>
-                <td class="s4" dir="ltr" colspan="2">Is supplement to</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">related_identifiers:relation</td>
+            <tr>
+                <th>├─ Relation [1]</th>
+                <td class="s3" colspan="2">Is supplement to</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">related_identifiers:relation</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">├─ Identifier [1]</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s4" dir="ltr">URL of the release of the repository</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">related_identifiers:identifier</td>
+            <tr>
+                <th>├─ Identifier [1]</th>
+                <td class="s2">x</td>
+                <td class="s3">URL of the release</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">related_identifiers:identifier</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">├─Scheme [1]</td>
-                <td class="s4" dir="ltr" colspan="2">URL</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">related_identifiers:scheme</td>
+            <tr>
+                <th>├─Scheme [1]</th>
+                <td class="s3" colspan="2">URL</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">related_identifiers:scheme</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">└─ Resource type [1]</td>
-                <td class="s4" dir="ltr" colspan="2">Software</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">related_identifiers:resource_type</td>
+            <tr>
+                <th>└─ Resource type [1]</th>
+                <td class="s3" colspan="2">Software</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">related_identifiers:resource_type</td>
             </tr>
-            <tr style="height: 20px">
-                <td class="s1" dir="ltr">Software: Repository URL [1]</td>
-                <td class="s2" dir="ltr">URL of the GitHub repository</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
-                <td class="s2" dir="ltr">repository_url</td>
+            <tr>
+                <th>Software: Repository URL [1]</th>
+                <td class="s1">URL of the GitHub repository</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s2">x</td>
+                <td class="s1">repository_url</td>
             </tr>
         </tbody>
     </table>
 </div>
+
+> [!WARNING]
+>  If a GitHub repository has both a Zenodo metadata file and a citation metadata file, the Zenodo agent will ignore the citation metadata file completely.
+
+> [!NOTE]
+> The `.zenodo.json` file supports more Zenodo metadata fields than are listed in this table. All fields that are only supported by the `.zenodo.json` file and not by any other resource are omitted for clarity.

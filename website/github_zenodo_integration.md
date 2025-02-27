@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Zenodo-GitHub-Integration Documentation"
-permalink: /documentation/
+permalink: /
 ---
 
 > [!ABSTRACT]
@@ -31,13 +31,13 @@ As soon as a connection between a GitHub repository and Zenodo is established, e
     <i>Default metadata extracted from the GitHub repository.</i>
 </p>
 
-Besides metadata that is extracted directly from the repository, the Zenodo agent also searches the root directory of the GitHub repository for certain files from which it can extract metadata for the Zenodo record. Namely, these files are `LICENSE`, `CITATION.cff`, and `.zenodo.json`. Refer to the [metadata mapping table](https://docs.google.com/spreadsheets/d/14XAITKJBJQ8JJBGAX_rkhZtm3W_4EjkQBwkY5Up6xEk/edit?usp=sharing) for details.
+Besides metadata that is extracted directly from the repository, the Zenodo agent also searches the root directory of the GitHub repository for certain files from which it can extract metadata for the Zenodo record. Namely, these files are `LICENSE`, `CITATION.cff`, and `.zenodo.json`. Refer to the [metadata mapping table](../table/) for details.
 
 > [!NOTE]
 > Data in the `.zenodo.json` file has the highest priority, followed by information in the `CITATION.cff` file, and then details in the `LICENSE` file. Lastly, any remaining data from the GitHub repository and its release is used, with release information taking precedence over repository information.
 
 > [!WARNING]
-> If both a Zenodo metadata file and a citation metadata file are present in the GitHub repository, the Zenodo agent will completely ignore the citation metadata file.
+> If a GitHub repository has both a Zenodo metadata file and a citation metadata file, the Zenodo agent will ignore the citation metadata file completely.
 
 <p align="right" width="100%">
     <img width="90%" src="../website/images/metadata_sources.png">
@@ -74,7 +74,7 @@ License information in the `CITATION.cff` file or `.zenodo.json` file cause the 
 
 “`CITATION.cff` files are plain text files with human- and machine-readable citation information for software (and datasets). Code developers can include them in their repositories to let others know how to correctly cite their software” ([Citation File Format](https://citation-file-format.github.io/)).
 
-If a citation metadata file is found in the root directory of the GitHub repository, the Zenodo agent fetches its contents and fills the metadata fields of the Zenodo record accordingly, thereby overwriting default metadata. Only a subset of the citation metadata fields is interpreted by the Zenodo agent. These fields are `abstract`, `authors`, `keywords`, `license`, `title` and `message`. The mapping is detailed in the [metadata mapping table](https://docs.google.com/spreadsheets/d/14XAITKJBJQ8JJBGAX_rkhZtm3W_4EjkQBwkY5Up6xEk/edit?usp=sharing).
+If a citation metadata file is found in the root directory of the GitHub repository, the Zenodo agent fetches its contents and fills the metadata fields of the Zenodo record accordingly, thereby overwriting default metadata. Only a subset of the citation metadata fields is interpreted by the Zenodo agent. These fields are `abstract`, `authors`, `keywords`, `license`, `title` and `message`. The mapping is detailed in the [metadata mapping table](../table).
 
 > [!NOTE]
 >  If the citation metadata file is structurally invalid or contains invalid values, the process fails and nothing is published on Zenodo. Ideally, use the [CFF INIT tool](https://citation-file-format.github.io/cff-initializer-javascript/#/) to create valid citation metadata files.

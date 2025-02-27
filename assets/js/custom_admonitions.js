@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', function () {
             var newPara = document.createElement('p');
             newPara.innerHTML = remainingContent;
             // Add the corresponding class to the new paragraph
-            newPara.classList.add('admonition-' + type);
+            newPara.classList.add(type);
 
             // Replace the blockquote with the new paragraph element
             quote.parentNode.replaceChild(newPara, quote);

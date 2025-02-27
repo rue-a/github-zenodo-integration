@@ -1,0 +1,47 @@
+table {
+    width: 150%;
+
+
+
+
+    th,
+    td {
+        text-align: center;
+        padding: 5px 10px;
+        color: #434343;
+        font-size: 10pt;
+        vertical-align: bottom;
+        white-space: normal;
+        overflow: hidden;
+        word-wrap: break-word;
+    }
+
+    /* Header row */
+    thead th {
+        background-color: hsl(223, 15%, 46%);
+        padding-bottom: 15px;
+        padding-top: 15px;
+        vertical-align: middle;
+        color: #ffffff;
+    }
+
+    /* First column (excluding header row) */
+    tbody th {
+        text-align: left;
+        background-color: #eceef7;
+        color: #000000;
+    }
+
+    /* Background colors for other styles */
+    .s1 {
+        background-color: hsl(220, 100%, 86%);
+    }
+
+    .s2 {
+        background-color: #f0f0f0;
+    }
+
+    .s3 {
+        background-color: #fffae9;
+    }
+}

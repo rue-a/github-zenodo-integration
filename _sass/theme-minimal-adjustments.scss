@@ -1,13 +1,13 @@
 // Global settings for the body and typography
 mark {
-    background-color: hsl(220, 58%, 78%);
+    background-color: hsl(220, 100%, 86%);
 }
 
 body {
     background-color: #fff;
     padding: 50px;
     font: 12pt/1.5 Work-Sans, Arial, sans-serif;
-    color: #727272;
+    color: #525252;
     font-weight: 400;
 
     a {
@@ -40,6 +40,20 @@ body {
         line-height: 1.1;
     }
 
+    table {
+        margin-left: -20px;
+    }
+
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+        font-size: 13pt;
+    }
+
+    li {
+        margin: 30pt 0;
+    }
+
     p,
     ul,
     ol,
@@ -69,26 +83,14 @@ body {
         overflow-x: auto;
     }
 
-    table {
-        width: 100%;
-        border-collapse: collapse;
 
-        th,
-        td {
-            text-align: left;
-            padding: 5px 10px;
-            border-bottom: 1px solid #e5e5e5;
-        }
-    }
 
     dt {
         color: #444;
         font-weight: 700;
     }
 
-    th {
-        color: #444;
-    }
+
 
     img {
         max-width: 100%;
@@ -124,6 +126,7 @@ body {
 .wrapper {
     width: 1060px;
     margin: 0 auto;
+    margin-left: 200px;
 }
 
 // Header and footer styling
@@ -145,6 +148,10 @@ footer {
     ul {
         list-style: none;
         font-size: 14pt;
+    }
+
+    li {
+        margin: auto;
     }
 }
 

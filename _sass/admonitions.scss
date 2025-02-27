@@ -1,48 +1,40 @@
-.admonition-note strong,
-.admonition-tip strong,
-.admonition-important strong,
-.admonition-warning strong,
-.admonition-caution strong {
-    font-style: normal;
+.admonition {
+
+    &-note,
+    &-tip,
+    &-important,
+    &-warning,
+    &-caution {
+        padding: 10px 30px;
+        margin: 2em 0;
+    }
+
+    &-note {
+        background-color: #f0f8ff;
+    }
+
+    &-tip {
+        background-color: #e8f5e9;
+    }
+
+    &-important {
+        background-color: #ffe5e0;
+    }
+
+    &-warning {
+        background-color: #ffe6e6;
+    }
+
+    &-caution {
+        background-color: #fff5e6;
+    }
+
+    strong {
+        font-style: normal;
+    }
 }
 
-.admonition-note {
-    border-left: 4px solid #1e90ff;
-    background-color: #f0f8ff;
-    padding: 10px;
-    margin: 1em 0;
-}
-
-.admonition-tip {
-    border-left: 4px solid #2ecc71;
-    background-color: #e8f5e9;
-    padding: 10px;
-    margin: 1em 0;
-}
-
-.admonition-important {
-    border-left: 4px solid #ff4500;
-    background-color: #ffe5e0;
-    padding: 10px;
-    margin: 1em 0;
-}
-
-.admonition-warning {
-    border-left: 4px solid #ff0000;
-    background-color: #ffe6e6;
-    padding: 10px;
-    margin: 1em 0;
-}
-
-.admonition-caution {
-    border-left: 4px solid #ffa500;
-    background-color: #fff5e6;
-    padding: 10px;
-    margin: 1em 0;
-}
-
-p.admonition-abstract {
+p.abstract {
     font-style: italic;
-    padding-right: 40px;
-    padding-left: 30px;
+    padding: 0 40px 0 30px;
 }
