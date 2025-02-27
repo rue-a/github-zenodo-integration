@@ -39,6 +39,11 @@
     &-caution {
         padding: 10px 30px;
         margin: 2em 0;
+
+        img {
+            border: #ffffff 3px solid;
+            border-radius: 8px;
+        }
     }
 
     &-note {
