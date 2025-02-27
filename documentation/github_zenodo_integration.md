@@ -1,7 +1,7 @@
 ---
 layout: default
 title: "Zenodo-GitHub-Integration Documentation"
-permalink: /
+permalink: /documentation/
 ---
 
 > [!ABSTRACT]
@@ -15,7 +15,7 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 > It is strongly advised to **test the integration on the [Zenodo Sandbox](https://sandbox.zenodo.org/)** before deploying it in a production environment. Once a record is published on Zenodo, it cannot be deleted.
 
 <p align="right" width="100%">
-    <img width="90%" src="/images/integration_enabling.png">
+    <img width="90%" src="../documentation/images/integration_enabling.png">
     <br>
     <i>Enabling the GitHub-Zenodo-Integration.</i>
 </p>
@@ -26,12 +26,12 @@ Configuring the Zenodo-GitHub-Integration is a straightforward process. To enabl
 As soon as a connection between a GitHub repository and Zenodo is established, each new release of the GitHub repository causes the Zenodo integration software (Zenodo agent) to download the repository as a compressed ZIP archive and to publish it subsequently on Zenodo as a new record (or a new version if a record was already created by a previous release). The Zenodo agent also extracts metadata from the GitHub repository and from its release, and uses it to populate the Zenodo record.
 
 <p align="right" width="100%">
-    <img width="90%" src="/images/default_metadata.png">
+    <img width="90%" src="../documentation/images/default_metadata.png">
     <br>
     <i>Default metadata extracted from the GitHub repository.</i>
 </p>
 
-Besides metadata that is extracted directly from the repository, the Zenodo agent also searches the root directory of the GitHub repository for certain files from which it can extract metadata for the Zenodo record. Namely, these files are `LICENSE`, `CITATION.cff`, and `.zenodo.json`. Refer to the [metadata mapping table](../table/) for details.
+Besides metadata that is extracted directly from the repository, the Zenodo agent also searches the root directory of the GitHub repository for certain files from which it can extract metadata for the Zenodo record. Namely, these files are `LICENSE`, `CITATION.cff`, and `.zenodo.json`. Refer to the [metadata mapping table](../documentation/table/) for details.
 
 > [!NOTE]
 > Data in the `.zenodo.json` file has the highest priority, followed by information in the `CITATION.cff` file, and then details in the `LICENSE` file. Lastly, any remaining data from the GitHub repository and its release is used, with release information taking precedence over repository information.
@@ -40,7 +40,7 @@ Besides metadata that is extracted directly from the repository, the Zenodo agen
 > If a GitHub repository has both a Zenodo metadata file and a citation metadata file, the Zenodo agent will ignore the citation metadata file completely.
 
 <p align="right" width="100%">
-    <img width="90%" src="/images/metadata_sources.png">
+    <img width="90%" src="../documentation/images/metadata_sources.png">
     <br>
     <i>Different sources from which the Zenodo agent extracts metadata (non-comprehensive).</i>
 </p>
@@ -74,7 +74,7 @@ License information in the `CITATION.cff` file or `.zenodo.json` file cause the 
 
 “`CITATION.cff` files are plain text files with human- and machine-readable citation information for software (and datasets). Code developers can include them in their repositories to let others know how to correctly cite their software” ([Citation File Format](https://citation-file-format.github.io/)).
 
-If a citation metadata file is found in the root directory of the GitHub repository, the Zenodo agent fetches its contents and fills the metadata fields of the Zenodo record accordingly, thereby overwriting default metadata. Only a subset of the citation metadata fields is interpreted by the Zenodo agent. These fields are `abstract`, `authors`, `keywords`, `license`, `title` and `message`. The mapping is detailed in the [metadata mapping table](../table).
+If a citation metadata file is found in the root directory of the GitHub repository, the Zenodo agent fetches its contents and fills the metadata fields of the Zenodo record accordingly, thereby overwriting default metadata. Only a subset of the citation metadata fields is interpreted by the Zenodo agent. These fields are `abstract`, `authors`, `keywords`, `license`, `title` and `message`. The mapping is detailed in the [metadata mapping table](../documentation/table).
 
 > [!NOTE]
 >  If the citation metadata file is structurally invalid or contains invalid values, the process fails and nothing is published on Zenodo. Ideally, use the [CFF INIT tool](https://citation-file-format.github.io/cff-initializer-javascript/#/) to create valid citation metadata files.
@@ -94,7 +94,7 @@ The Zenodo metadata file is similar to the citation metadata file, but with the 
 > [!NOTE]
 > Every information defined in the Zenodo metadata file is transmitted to the resulting Zenodo record as is. This means, for example, not changing the version value in the Zenodo metadata file across multiple releases results in multiple Zenodo record versions with the same version label. 
 <p align="right" width="100%">
-    <img width="50%" src="./images/same_versions.png"><br>
+    <img width="50%" src="../documentation/images/same_versions.png"><br>
     <i>Different versions, same version labels.</i>
 </p>
 
