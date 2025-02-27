@@ -132,35 +132,35 @@ permalink: /mapping/
                 <td class="s2" dir="ltr">creators [n]</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Creators (Person): Family name [1]</td>
+                <td class="s1" dir="ltr">├─ Family name [1]</td>
                 <td class="s2" dir="ltr" colspan="2">Read from GitHub profile (Field: Name) [1]</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s2" dir="ltr">authors:familiy-names [1]</td>
                 <td class="s2" dir="ltr">creators:name [1]</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Creators (Person): Given names [n]</td>
+                <td class="s1" dir="ltr">├─ Given names [n]</td>
                 <td class="s3" dir="ltr" colspan="2">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s2" dir="ltr">authors:given-names [n]</td>
                 <td class="s2" dir="ltr">creators:name [n]</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Creators (Person): Identifiers [n]</td>
+                <td class="s1" dir="ltr">├─ Identifiers [n]</td>
                 <td class="s3" dir="ltr" colspan="2">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s4" dir="ltr">authors:orcid [1]</td>
                 <td class="s4" dir="ltr">creators:orcid and/or creators:gnd [0..2]</td>
             </tr>
             <tr style="height: 38px">
-                <td class="s1" dir="ltr"> Creators (Person): Affiliations [n]</td>
+                <td class="s1" dir="ltr">├─ Affiliations [n]</td>
                 <td class="s4" dir="ltr" colspan="2">Read from GitHub profile (Field: Organization) [1]</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s4" dir="ltr">authors:affiliation [1]</td>
                 <td class="s2" dir="ltr">creators:affiliation [1] or creators:affiliations [n]</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Creators (Person): Role [n]</td>
+                <td class="s1" dir="ltr">└─ Role [n]</td>
                 <td class="s3" dir="ltr" colspan="2">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s3" dir="ltr">x</td>
@@ -218,14 +218,14 @@ permalink: /mapping/
                 <td class="s2" dir="ltr">related_identifiers [n]</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Related Works: Relation [1]</td>
+                <td class="s1" dir="ltr">├─ Relation [1]</td>
                 <td class="s4" dir="ltr" colspan="2">Is supplement to</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s2" dir="ltr">related_identifiers:relation</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Related Works: Identifier [1]</td>
+                <td class="s1" dir="ltr">├─ Identifier [1]</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s4" dir="ltr">URL of the release of the repository</td>
                 <td class="s3" dir="ltr">x</td>
@@ -233,26 +233,26 @@ permalink: /mapping/
                 <td class="s2" dir="ltr">related_identifiers:identifier</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Related Works: Scheme [1]</td>
+                <td class="s1" dir="ltr">├─Scheme [1]</td>
                 <td class="s4" dir="ltr" colspan="2">URL</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s2" dir="ltr">related_identifiers:scheme</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr"> Related Works: Resource type [1]</td>
+                <td class="s1" dir="ltr">└─ Resource type [1]</td>
                 <td class="s4" dir="ltr" colspan="2">Software</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s2" dir="ltr">related_identifiers:resource_type</td>
             </tr>
             <tr style="height: 20px">
-                <td class="s1" dir="ltr">Repository URL [1]</td>
+                <td class="s1" dir="ltr">Software: Repository URL [1]</td>
                 <td class="s2" dir="ltr">URL of the GitHub repository</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s3" dir="ltr">x</td>
                 <td class="s3" dir="ltr">x</td>
-                <td class="s3" dir="ltr">x</td>
+                <td class="s2" dir="ltr">repository_url</td>
             </tr>
         </tbody>
     </table>
